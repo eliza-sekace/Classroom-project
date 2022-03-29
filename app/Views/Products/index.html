@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% for product in products %}
+<div class="bg-white px-5 py-4 shadow rounded-lg">
+<a href="products/{{product.id}}"  >
+ {{ product.title}}:
+ {{ product.price}}$
+</a>
+ <br>
+</div>
+<br>
+
+{% endfor %}
+
+{% endblock %}

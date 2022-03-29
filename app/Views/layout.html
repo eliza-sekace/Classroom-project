@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Album - Photo Collection Template , Responsive Bootstrap 4 template ,
+     bootstrap 4 starter template, bootstrap4 template, Album template, Photography Template">
+</head>
+
+<title>Food store </title>
+
+
+<body class="bg-light">
+<header>
+    <nav class="d-flex justify-content-end align-items-center px-4 py-2">
+        <a style="color: #222222" class="nav-item nav-link" href="/products">Home</a>
+        <a style="color: #222222" class="nav-item nav-link" href="/products/create">Add product</a>
+        <a style="color: #222222" class="nav-item nav-link" href="/cart">See cart</a>
+
+    </nav>
+</header>
+
+<main id="content" class="container mx-auto">
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</main>
+<br><br>
+
+<footer class="container mx-auto">
+    &copy; Food store
+</footer>
+
+
+{% block scripts %}
+{% endblock %}
+
+</body>
+
+

@@ -8,7 +8,7 @@ use Doctrine\DBAL\DriverManager;
 class Connection
 {
     protected static array $params = [
-        'dbname' => 'app',
+        'dbname' => 'shop',
         'user' => 'root',
         'host' => 'localhost',
         'driver' => 'pdo_mysql',

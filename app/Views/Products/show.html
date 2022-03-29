@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="bg-white px-5 py-4 shadow rounded-lg">
+{{ product.title}} <br>
+{{ product.description}} <br>
+Available: {{ product.available}} <br>
+Price per unit: {{ product.price}} $<br>
+<br>
+<!--add bootstrap "counter here"-->
+<button class="btn btn-success ">
+    Add to cart
+</button>
+</div>
+
+{% endblock %}
