@@ -1,6 +1,21 @@
 {% extends "layout.html" %}
 {% block content %}
 
-My cart:
+<div class="bg-white px-5 py-4 shadow rounded-lg">
+ <h2> My cart: </h2><br>
+{% for item in cart.all %}
+
+<!--{% for item in product %}-->
+<!--{{ item.title}}-->
+<!--{% endfor %}-->
+<!-- {{ product.amount }} pcs-->
+ <div>{{ item.info }}</div>
+<br>
+{% endfor %}
+ <div>Total amount: {{ cart.total }}$</div>
+<br>
+ <button class="btn btn-success" style="text-align: right">Buy</button>
+</div>
+
 
 {% endblock %}

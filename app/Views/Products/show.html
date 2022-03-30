@@ -2,15 +2,26 @@
 {% block content %}
 
 <div class="bg-white px-5 py-4 shadow rounded-lg">
-{{ product.title}} <br>
-{{ product.description}} <br>
-Available: {{ product.available}} <br>
-Price per unit: {{ product.price}} $<br>
-<br>
-<!--add bootstrap "counter here"-->
-<button class="btn btn-success ">
-    Add to cart
-</button>
+    {{ product.title}} <br>
+    {{ product.description}} <br>
+    Available: {{ product.available}} <br>
+    Price per unit: {{ product.price}} $<br>
+    <br>
+    <form action="{{product.id}}/addToCart" method="post">
+        <label class="form-label" for="amount">Amount: <br></label>
+        <div class="flex d-flex">
+
+            <div class="form-outline pr-2" style="width: 250px">
+                <input type="number" id="amount" name="amount" class="form-control" min="0"/>
+            </div>
+
+            <button class="btn btn-success">
+                Add to cart
+            </button>
+        </div>
+    </form>
+
+
 </div>
 
 {% endblock %}

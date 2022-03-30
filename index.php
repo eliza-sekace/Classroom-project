@@ -22,6 +22,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('POST', '/products', ['App\Controllers\ProductsController', 'store']);
     $r->addRoute('GET', '/products/{id}', ['App\Controllers\ProductsController', 'show']);
 
+    $r->addRoute('POST', '/products/{id}/addToCart', ['App\Controllers\CartController', 'add']);
     $r->addRoute('GET', '/cart', ['App\Controllers\CartController', 'show']);
 
 });
